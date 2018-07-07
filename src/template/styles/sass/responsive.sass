@@ -2,18 +2,157 @@
 	.case
 		width: 950px
 
+	.about
+		padding-top: 30px
+		padding-bottom: 30px
+		&__wrap
+			align-items: flex-start
+		&__title
+			&:before
+				display: none
+		&__text
+			padding-top: 0
+			padding-left: 30px
+			width: calc(100% - 310px)
+			p
+				margin-bottom: 15px
+				&:last-of-type
+					margin-bottom: 0
 
-	
+	.section
+		padding-top: 30px
+		padding-bottom: 30px
+		&__img
+			display: none
+			&_palette
+				display: block
+		&__text
+			width: calc(100% - 350px)
+			padding-left: 100px
+			p
+				margin-bottom: 15px
+			&.rounds
+				p
+					margin-bottom: 20px
+					&.pt
+						padding-top: 5px
+				.round
+					width: 32px
+					height: 32px
+					line-height: 30px
+					font-size: 17px
+					left: -78px
+			
+	.desc
+		margin-bottom: 0
+
+
 	.hidden-md
 		display: none
 
 @media screen and (max-width: 992px)
 	.case
 		width: 750px
-
 	
+	.slider
+		&__img
+			left: 0
+			width: 100%
+			
+		&__data
+			height: 50px
 
+		&__control
+			.slick-arrow
+				height: 50px
+				line-height: 50px
+		&__counts
+			line-height: 36px
+			height: 50px
+			&-total
+				position: relative
+				top: 4px
+				&:before
+					font-size: 20px
+					margin-right: 3px
+		&__content
+			left: 0
+			padding-left: 100px
 
+			
+	.call
+		right: 15px
+		top: 28px
+
+	.logo
+		left: 103px
+
+	.mobile-nav
+		padding-left: 103px
+
+	.about, .section
+		&__title, &__text
+			width: 100%
+		&__title
+			margin-bottom: 12px
+			text-align: center
+
+	.about
+		&__text
+			padding-left: 0
+			
+	.section
+		padding-top: 15px
+		padding-bottom: 15px
+		&__text
+			padding-left: 0
+			line-height: 22px
+			&.rounds
+				padding-left: 40px
+				.round
+					left: -45px
+					&:after
+						display: none
+			p
+				&:last-of-type
+					margin-bottom: 0
+		&__img
+			&_palette
+				position: relative
+				top: auto
+				width: 100%
+				margin-bottom: 15px
+				img
+					margin-left: auto
+					margin-right: auto
+		&__btn
+			margin-left: auto
+			margin-right: auto
+				
+	.catalog
+		padding-top: 20px
+		&__nav
+			li
+				width: 33.333%
+			a
+				text-align: center
+				margin-bottom: 10px
+		&__table
+			td, th
+				display: none
+				&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3)
+					display: table-cell
+			
+
+	.contacts
+		&__wrap
+			&:after
+				display: none
+
+	.map
+		&__wrap
+			height: 270px
+			
 	.hidden-md
 		display: block
 
@@ -24,12 +163,222 @@
 	.case
 		width: 100%
 
+	.panel
+		&-left
+			background: none
+			border-right: none
+			width: auto
+			height: auto
+			padding-top: 0
+		&-top
+			padding-left: 75px
+			padding-top: 23px
 
+	.btn-mobile
+		width: 40px
+		height: 40px
+		padding-top: 15px
+		background-color: #fff
+		border-radius: 50%
+		top: 15px
+		left: 15px
+		position: absolute
+		span
+			background-color: #262626
+		span
+			width: 20px
+			margin-left: auto
+			margin-right: auto
+
+	.socials
+		display: none
+
+	.logo, .call
+		position: relative
+		top: auto
+		left: auto
+		right: auto
+		bottom: auto
+
+	.call
+		padding-right: 15px
+
+	.btn-callback
+		display: none
+	.slider
+		position: relative
+		margin-top: -45px
+		&__data
+			width: 100%
+		&__content
+			position: relative
+			top: auto
+			transform: none
+			margin-top: 0
+			padding-left: 15px
+			padding-right: 15px
+			padding-top: 100px
+			padding-bottom: 100px
+			text-align: center
+		&__title
+			font-size: 30px
+			margin-bottom: 10px
+		&__desc
+			font-size: 22px
+			line-height: normal
+			margin-bottom: 15px
+		&__btn
+			margin-left: auto
+			
+			
+			
+		&__img, &__item, &__wrap .slick-slide
+			height: auto
+			min-height: 1px
+			
+	.header
+		height: auto
+		min-height: 1px
+
+	.mobile-nav
+		z-index: 4
+	.logo
+		z-index: 4
+			
+
+	.mobile-nav
+		width: 100%
+		padding-left: 20px
+		padding-top: 70px
+			
+	.title
+		font-size: 24px
+		line-height: normal
+
+	.desc
+		position: relative
+		&:before
+			z-index: 1
+			position: absolute
+			content: ''
+			right: 0
+			left: 0
+			top: 0
+			bottom: 0
+			background-color: rgba(0,0,0,.3)
+		.case
+			z-index: 2
+
+		&__text
+			padding: 30px 0
+			font-size: 18px
+			line-height: 22px
+
+	.catalog
+		&__nav
+			li
+				width: 100%
+			a
+				margin-left: 0
+				margin-right: 0
+			
 	
+	.price
+		margin-top: 30px
+		margin-bottom: -15px
+		&__item
+			margin-bottom: 35px
+			
+		&__title
+			padding-left: 45px
+			font-size: 16px
+			margin-bottom: 15px
+			.round
+				&:after
+					display: none
 
+		&__data
+			margin-left: -15px
+			margin-right: -15px
+			li
+				padding-left: 15px
+				padding-right: 15px
+				span
+					font-size: 16px
+					width: 100% !important
+					&:nth-of-type(2)
+						padding-right: 0
+
+			
+	.feedback
+		padding-top: 25px
+		padding-bottom: 25px
+			
+		&__desc
+			margin-bottom: 15px
+		&__input, &__textarea
+			width: 100%
+			max-width: 475px
+			
+		&__textarea
+			margin-bottom: 25px
+			
+			
+	.contacts
+		&__wrap
+			padding-top: 25px
+			padding-bottom: 25px
+		&__title, &__data
+			width: 100%
+			
+		&__title
+			text-align: center
+			margin-bottom: 20px
+			margin-right: 0
+
+		&__data
+			li
+				font-size: 16px
+				margin-bottom: 5px
+				.phone
+					font-size: 16px
+					font-weight: 400
+			
+			
+			
+			
 
 	.hidden-sm
 		display: block
 
 	.hidden-xs
 		display: none
+
+
+
+@media screen and (max-width: 460px)
+	.logo, .call
+		width: 100%
+	
+	.panel-top
+		padding-left: 30px
+		padding-right: 30px
+	.logo
+		margin-bottom: 10px
+		img
+			margin-left: auto
+			margin-right: auto
+	.call
+		position: relative
+		padding-right: 0
+		font-size: 15px
+		text-align: center
+		.phone
+			margin-right: 0
+			display: block
+			margin-left: auto
+			margin-right: auto
+			width: 100%
+
+	.slider
+		margin-top: -75px
