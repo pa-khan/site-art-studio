@@ -45,6 +45,8 @@
         left: -78px; }
   .desc {
     margin-bottom: 0; }
+  .price {
+    margin-bottom: 0; }
   .hidden-md {
     display: none; } }
 
@@ -91,6 +93,8 @@
     .section__text {
       padding-left: 0;
       line-height: 22px; }
+      .section__text .fz18 {
+        font-size: 15px; }
       .section__text.rounds {
         padding-left: 40px; }
         .section__text.rounds .round {
@@ -125,6 +129,8 @@
     display: none; }
   .map__wrap {
     height: 270px; }
+  .title:before {
+    display: none; }
   .hidden-md {
     display: block; }
   .hidden-sm {

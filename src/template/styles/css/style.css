@@ -717,10 +717,20 @@ img {
   font-weight: 900;
   width: 350px;
   position: relative; }
+  .title:before {
+    content: '';
+    width: 90px;
+    height: 1px;
+    position: absolute;
+    top: 23px;
+    left: -115px;
+    background-color: #d8d8d8; }
 
 .about {
   padding-top: 115px;
   padding-bottom: 90px; }
+  .about_no-top {
+    padding-top: 0; }
   .about .case:before {
     z-index: 1;
     position: absolute; }
@@ -772,6 +782,8 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
   overflow: hidden; }
+  .section_top {
+    padding-top: 130px; }
   .section__wrap {
     position: relative; }
   .section__img {
@@ -1056,3 +1068,6 @@ img {
   .popup__btn {
     margin-top: 24px;
     width: 100%; }
+
+.fz18 {
+  font-size: 18px; }

@@ -83,4 +83,10 @@ $(document).ready(function($) {
 	}
 	valueElementForm('input');
 	valueElementForm('textarea');
+
+	$("a[href^='#']").click(function(){
+    var _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top - 10 +"px"}, 1500);
+    return false;
+	});
 });
